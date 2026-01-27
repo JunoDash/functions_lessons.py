@@ -1,10 +1,10 @@
 # Return Practice #1
 # Create a function called power that takes two numeric values as arguments. It must return the number that results from solving a power, using the first number as the base, and the second as the exponent
 
+def power(base, exponent):
+    return base**exponent
 
-
-
-
+print(power(2, 2))
 
 
 # Return Practice #2
