@@ -14,8 +14,10 @@ print(power(2, 2))
 
 # Hint: to perform the conversion, the function internally must multiply this value in dollars by 0.90 to obtain the equivalent amount in euros.
 
+def usd_to_eur(usd):
+    return usd * 0.90
 
-
+print(usd_to_eur(10))
 
 # Return Practice #3
 # Create a function called reverse_word that takes the characters of a given word as an argument, reverses the order of their characters, and returns them that way and in uppercase.
@@ -25,3 +27,8 @@ print(power(2, 2))
 # Also, you must create a variable called word, which contains any string, to pass it as an argument to the created function.
 
 # Hint: inside the created function, you should use string methods already seen.
+
+def reverse_word(word):
+    return word[::-1].upper() # use .upper() to capitalize and slicing to reverse
+
+print(reverse_word("hey"))
