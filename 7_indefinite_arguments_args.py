@@ -1,3 +1,26 @@
+"""
+def tea_order(customer_name, tea_type, **kwargs): # don't need to use "args", you can use any other word, just have to have the "*" | Arg is a tuple                # kwargs ** makes it into a dictionary, great for key words. "*" doesn't handel keywords
+    print(customer_name, "ordered a", tea_type, "tea")
+    for key, value in kwargs.items():
+        print(" + Add", key, ":", value)
+"""
+        
+def tea_order(customer_name, tea_type, *args, **kwargs): #posital arguemnts first then keywords (*arg first)
+    print(customer_name, "ordered a", tea_type, "tea")
+    for arg in args:
+        print(" + add", arg)
+    for key, value in kwargs.items():
+        print(" + Add", key, ":", value)
+ 
+tea_order("Alice", "chamolle")
+tea_order("Bob", "black", milk="oat")
+tea_order("Tony", "black", "oat", sweetener="honey")
+
+
+
+
+
+
 # Indefinite Arguments (*args) Practice #1
 # Create a function called sum_squares that takes any number of numeric arguments, and returns the sum of their values squared.
 
